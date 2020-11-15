@@ -16,6 +16,7 @@ use Sami\Message;
 use Sami\Project;
 use Sami\Tree;
 use Symfony\Component\Filesystem\Filesystem;
+use Twig\Environment;
 
 class Renderer
 {
@@ -30,7 +31,7 @@ class Renderer
     protected $indexer;
     protected $cachedTree;
 
-    public function __construct(\Twig_Environment $twig, ThemeSet $themes, Tree $tree, Indexer $indexer)
+    public function __construct(Environment $twig, ThemeSet $themes, Tree $tree, Indexer $indexer)
     {
         $this->twig = $twig;
         $this->themes = $themes;
