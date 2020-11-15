@@ -12,6 +12,14 @@ Installation
 
     Sami requires **PHP 7**.
 
+Install with composer:
+.. code-blok:: bash
+    $ composer require kml/sami
+
+Test the installation with:
+.. code-blok:: bash
+    $ php ./vendor/kml/sami/sami.php
+
 Get Sami as a `phar file`_:
 
 .. code-block:: bash
